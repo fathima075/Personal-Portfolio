@@ -1,0 +1,108 @@
+/* --- Basic Reset --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #82d0c2;
+  color: #c94965;
+}
+
+/* --- Navbar --- */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* --- Sections --- */
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+#home {
+  background: linear-gradient(to right, #74dfeb, #21bbc6);
+  text-align: center;
+  color: #fff;
+}
+#home h1 {
+  font-size: 2.5em;
+}
+
+#about, #projects, #contact {
+  background: #101111;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Projects --- */
+.project {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: scale(1.05);
+  background: #eaf4ff;
+}
+
+/* --- Contact Form --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, textarea {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #f39c12;
+}
+#responseMsg {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+}
